@@ -12,6 +12,7 @@ import { QuienesSomosComponent } from './pages/quienes-somos/quienes-somos.compo
 import { FooterComponent } from './shared/footer/footer.component';
 import { MainComponent } from './pages/main/main.component';
 import { BuscarContadorComponent } from './pages/necesito-contador/buscar-contador/buscar-contador.component';
+import { RegistrarContadorComponent } from './pages/soy-contador/registrar-contador/registrar-contador.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { BuscarContadorComponent } from './pages/necesito-contador/buscar-contad
     QuienesSomosComponent,
     FooterComponent,
     MainComponent,
-    BuscarContadorComponent
+    BuscarContadorComponent,
+    RegistrarContadorComponent
   ],
   imports: [
     BrowserModule,
