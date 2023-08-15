@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NuevoClienteComponent } from './pages/necesito-contador/nuevo-cliente/nuevo-cliente.component';
 import { NoPageFoundComponent } from './pages/no-page-found/no-page-found.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
@@ -11,13 +10,15 @@ import { HeaderComponent } from './shared/header/header.component';
 import { QuienesSomosComponent } from './pages/quienes-somos/quienes-somos.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { MainComponent } from './pages/main/main.component';
-import { BuscarContadorComponent } from './pages/necesito-contador/buscar-contador/buscar-contador.component';
+import { BuscarContadorComponent } from './pages/stepper-cliente/buscar-contador/buscar-contador.component';
 import { RegistrarContadorComponent } from './pages/soy-contador/registrar-contador/registrar-contador.component';
+import { AvisoComponent } from './pages/stepper-cliente/aviso/aviso.component';
+import { SeleccionarNecesidadComponent } from './pages/stepper-cliente/seleccionar-necesidad/seleccionar-necesidad.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NuevoClienteComponent,
     NoPageFoundComponent,
     SidebarComponent,
     NavbarComponent,
@@ -26,13 +27,12 @@ import { RegistrarContadorComponent } from './pages/soy-contador/registrar-conta
     FooterComponent,
     MainComponent,
     BuscarContadorComponent,
-    RegistrarContadorComponent
+    RegistrarContadorComponent,
+    AvisoComponent,
+    SeleccionarNecesidadComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

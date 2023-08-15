@@ -1,0 +1,16 @@
+<section class="py-5">
+  <div class="container px-5 mb-5">
+    <div class="text-center mb-5">
+      <h2 class="display-5 fw-bolder mb-0">
+        <span class="text-gradient d-inline">Ventas</span>
+      </h2>
+    </div>
+    <form
+      [formGroup]="ventasForm"
+      (ngSubmit)="onSubmit()"
+      autocomplete="do-not-show-ac"
+      action="."
+      method="post"
+    ></form>
+  </div>
+</section>
