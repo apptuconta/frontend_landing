@@ -4,6 +4,8 @@ import { SeleccionarNecesidadComponent } from './seleccionar-necesidad/seleccion
 import { AvisoComponent } from './aviso/aviso.component';
 import { SeleccionarActividadMonoComponent } from './alta-monotributo/seleccionar-actividad-mono/seleccionar-actividad-mono.component';
 import { VentasMonotributoComponent } from './alta-monotributo/ventas-monotributo/ventas-monotributo.component';
+import { IdentificarseComponent } from './identificarse/identificarse.component';
+import { FormDatosPersonalesComponent } from './form-datos-personales/form-datos-personales.component';
 
 const routes: Routes = [
   {
@@ -24,6 +26,14 @@ const routes: Routes = [
       {
         path: 'ventas-monotributo',
         component: VentasMonotributoComponent,
+      },
+      {
+        path: 'identificacion',
+        component: IdentificarseComponent,
+      },
+      {
+        path: 'datos-personales',
+        component: FormDatosPersonalesComponent,
       },
     ],
   },
