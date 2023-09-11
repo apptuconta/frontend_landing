@@ -1,0 +1,125 @@
+<section class="py-5">
+  <div class="container px-5 mb-5">
+    <div class="mb-5 text-center">
+      <h2 class="display-5 fw-bolder mb-0">
+        <span class="text-gradient d-inline">Datos profesionales</span>
+      </h2>
+    </div>
+
+    <form
+      [formGroup]="datosPersonalesForm"
+      (ngSubmit)="onSubmit()"
+      autocomplete="do-not-show-ac"
+      action="."
+      method="post"
+    >
+      <div class="row g-3">
+        <div class="col-12">
+          <p>Matricula del CPCECABA</p>
+        </div>
+      </div>
+
+      <div class="py-3">
+        <div class="row g-3">
+          <div class="col-3">
+            <label for="inputPassword6" class="col-form-label"
+              >Nro de Tomo:</label
+            >
+          </div>
+          <div class="col-3">
+            <input
+              type="medidas"
+              id="medidas"
+              class="form-control medidasInput"
+              aria-describedby="m2"
+            />
+          </div>
+          <div class="col-3">
+            <label for="inputPassword6" class="col-form-label"
+              >Nro de Folio:</label
+            >
+          </div>
+          <div class="col-3">
+            <input
+              type="medidas"
+              id="medidas"
+              class="form-control medidasInput"
+              aria-describedby="m2"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-12">
+          <hr />
+        </div>
+      </div>
+      <div class="row g-3">
+        <div class="col-12">
+          <p>Evidencias</p>
+        </div>
+      </div>
+
+      <div class="form-group row mb-3">
+        <label for="inputEmail3" class="col-sm-4 col-form-label"
+          >Adjuntá foto Matricula Frente</label
+        >
+        <div class="col-sm-8">
+          <input class="form-control" type="file" id="formFile" />
+        </div>
+      </div>
+
+      <div class="form-group row mb-3">
+        <label for="inputEmail3" class="col-sm-4 col-form-label"
+          >Adjuntá foto Matricula Dorso</label
+        >
+        <div class="col-sm-8">
+          <input class="form-control" type="file" id="formFile" />
+        </div>
+      </div>
+
+      <div class="form-group row mb-3">
+        <label for="inputEmail3" class="col-sm-4 col-form-label"
+          >Adjuntá foto DNI Frente</label
+        >
+        <div class="col-sm-8">
+          <input class="form-control" type="file" id="formFile" />
+        </div>
+      </div>
+
+      <div class="form-group row mb-3">
+        <label for="inputEmail3" class="col-sm-4 col-form-label"
+          >Adjuntá foto DNI Dorso</label
+        >
+        <div class="col-sm-8">
+          <input class="form-control" type="file" id="formFile" />
+        </div>
+      </div>
+
+      <!--  <div class="py-3 text-center">
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="inlineCheckbox1"
+            value="option1"
+          />
+          <label class="form-check-label" for="inlineCheckbox1"
+            >El domicilio coincide con el DNI</label
+          >
+        </div>
+      </div> -->
+    </form>
+
+    <div
+      class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mt-5"
+    >
+      <a
+        class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder"
+        routerLink="/contador/contador-seleccionar-servicios"
+        >Continuar</a
+      >
+    </div>
+  </div>
+</section>

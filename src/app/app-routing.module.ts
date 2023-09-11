@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainComponent } from './pages/main/main.component';
 import { BuscarContadorComponent } from './pages/stepper-cliente/buscar-contador/buscar-contador.component';
-import { RegistrarContadorComponent } from './pages/soy-contador/registrar-contador/registrar-contador.component';
+import { RegistrarContadorComponent } from './pages/stepper-contador/registrar-contador/registrar-contador.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },
@@ -13,9 +13,13 @@ const routes: Routes = [
         (m) => m.ClienteModule
       ),
   },
-  /*  { path: 'nuevo-cliente', component: NuevoClienteComponent },
-  { path: 'buscar-contador', component: BuscarContadorComponent },
-  { path: 'registrar-contador', component: RegistrarContadorComponent }, */
+  {
+    path: 'contador',
+    loadChildren: () =>
+      import('./pages/stepper-contador/contador.module').then(
+        (m) => m.ContadorModule
+      ),
+  },
 ];
 
 @NgModule({

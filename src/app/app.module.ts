@@ -11,7 +11,7 @@ import { QuienesSomosComponent } from './pages/quienes-somos/quienes-somos.compo
 import { FooterComponent } from './shared/footer/footer.component';
 import { MainComponent } from './pages/main/main.component';
 import { BuscarContadorComponent } from './pages/stepper-cliente/buscar-contador/buscar-contador.component';
-import { RegistrarContadorComponent } from './pages/soy-contador/registrar-contador/registrar-contador.component';
+import { RegistrarContadorComponent } from './pages/stepper-contador/registrar-contador/registrar-contador.component';
 import { AvisoComponent } from './pages/stepper-cliente/aviso/aviso.component';
 import { SeleccionarNecesidadComponent } from './pages/stepper-cliente/seleccionar-necesidad/seleccionar-necesidad.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
