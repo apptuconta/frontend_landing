@@ -109,11 +109,39 @@
     <div
       class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mt-5"
     >
-      <a
+      <a data-bs-toggle="modal" data-bs-target="#mailModal"
+        class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder"
+
+        >Continuar</a
+      >
+      <!-- <a
         class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder"
         routerLink="/cliente/identificacion"
         >Continuar</a
-      >
+      > -->
     </div>
   </div>
 </section>
+
+
+<!-- Modal -->
+<div class="modal fade" id="mailModal" tabindex="-1" role="dialog" aria-labelledby="googleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="googleModalLabel">mensaje</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Agrega aquí el contenido del modal -->
+        <p>En este paso se envía un email de bienvenida</p>
+        <!-- Ejemplo de botón en el modal -->
+        <button class="btn btn-danger"
+          data-bs-dismiss="modal"
+          routerLink="/cliente">
+          Continuar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
