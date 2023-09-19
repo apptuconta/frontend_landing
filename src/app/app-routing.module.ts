@@ -7,6 +7,11 @@ import { RegistrarContadorComponent } from './pages/stepper-contador/registrar-c
 const routes: Routes = [
   { path: '', component: MainComponent },
   {
+    path: 'stepper',
+    loadChildren: () =>
+      import('./pages/stepper/stepper.module').then((m) => m.StepperModule),
+  },
+  {
     path: 'cliente',
     loadChildren: () =>
       import('./pages/stepper-cliente/cliente.module').then(

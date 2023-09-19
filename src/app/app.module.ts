@@ -15,6 +15,7 @@ import { RegistrarContadorComponent } from './pages/stepper-contador/registrar-c
 import { AvisoComponent } from './pages/stepper-cliente/aviso/aviso.component';
 import { SeleccionarNecesidadComponent } from './pages/stepper-cliente/seleccionar-necesidad/seleccionar-necesidad.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { StepperComponent } from './pages/stepper/stepper.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     RegistrarContadorComponent,
     AvisoComponent,
     SeleccionarNecesidadComponent,
+    StepperComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, FormsModule],
   providers: [],
