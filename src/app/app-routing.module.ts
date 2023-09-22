@@ -20,6 +20,13 @@ const routes: Routes = [
         (m) => m.ContadorModule
       ),
   },
+  {
+    path: 'preguntas',
+    loadChildren: () =>
+      import('./pages/preguntas-frecuentes/preguntas-frecuentes.module').then(
+        (m) => m.PreguntasFrecuentesModule
+      ),
+  },
 ];
 
 @NgModule({
